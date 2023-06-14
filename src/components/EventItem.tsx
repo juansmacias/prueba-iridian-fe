@@ -14,7 +14,7 @@ interface IEventItemProps {
 const EventItem:React.FC<IEventItemProps>  = ({event}) => {
 
     return (
-        <Card variant="outlined" key={event.id}>
+        <Card variant="outlined" >
         <CardHeader title={event.name} />
         <CardContent>
             <Divider />

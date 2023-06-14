@@ -1,7 +1,8 @@
-const prod = process.env.NODE_ENV === 'production';
+const prod = process.env.NODE_ENV === 'production'
 
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const Dotenv = require('dotenv-webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
@@ -35,6 +36,10 @@ module.exports = {
       template: './public/index.html',
     }),
     new MiniCssExtractPlugin(),
+    new Dotenv({
+      path: './.env.local', // Path to .env file (this is the default)
+      safe: false, // load .env.example (defaults to "false" which does not use dotenv-safe)
+    })
   ],
   devServer: {
     historyApiFallback: true,

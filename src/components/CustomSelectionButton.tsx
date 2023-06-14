@@ -11,8 +11,8 @@ const CustomSelectionButton: React.FC<CustomSelectionButtonProps> = ({ title, su
   return (
     <ButtonBase onClick={onClick} 
     sx={{border:1, p:2,
-    width:'10em',
-    height:'5em',
+    width:'11em',
+    height:'7em',
     backgroundColor:selected?'green':'unset',
     color:selected?'white':'unset'
     }}>
