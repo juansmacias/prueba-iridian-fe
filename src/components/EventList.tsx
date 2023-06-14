@@ -4,7 +4,7 @@ import { Stack,Divider } from "@mui/material"
 import { Card, CardHeader, CardContent } from "@mui/material"
 
 // ----- Components ------
-import MarketList from '@/components/MarketList'
+import EventItem from "@/components/EventItem"
 
 // ----- Context ------
 import AppContext from "@/context/AppContext" 
@@ -22,13 +22,7 @@ const EventList = () => {
 			{context => (
 				<React.Fragment>
 					{context.events.filter(e=>e.markets&&e.markets?.length>0).map(e=>(
-					<Card variant="outlined" key={e.id}>
-						<CardHeader title={e.name} />
-						<CardContent>
-							<Divider />
-							<MarketList markets={e.markets} />
-						</CardContent>
-					</Card>
+						<EventItem event={e}/> 
 					))}
 				</React.Fragment>
 			)}
