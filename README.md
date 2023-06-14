@@ -52,6 +52,18 @@ En esta ocasión no se normalizo la data ya que se vio que la app no presentaba 
 
 Se revisaron 2 opciones de pruebas para la prueba. Cypress y la libreria de pruebas de React. Principalmente se uso la de Cypress por su facilidad de uso y robustez.
 
+## Instrucciones para correr codigo
+
+Para correr el codigo se puede mediante dos formas. 
+
+1. Modo Desarrollo
+
+Para correr la aplicacion en modo desarrollo se tiene que instalar todas las dependencias(`npm install`) y luego con el comando `npm run start` se inicia el webapp
+
+2. Modo Produccion
+
+Para el despliegue en produccion, hay que correr el comando `npm run build` y luego mediante explorador de archivos dirigirse a la carpeta de `build` y abrir archivo html.
+
 ## Conclusiones
 
 En conclusion fue un ejercicio retador que conyeba una gran cantidad de trabajo y varios retos a cumplir. Se pudo completar con exito la prueba y espera que todas las decisiones tomadas en relación a las tecnologias y librerias hayan estado en linea con lo que tienen establecido en Iridian.
