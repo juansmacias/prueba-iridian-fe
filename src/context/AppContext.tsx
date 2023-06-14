@@ -97,5 +97,7 @@ export default React.createContext({
         ]
     } as Market } as MySelection ],
     isSelectionInMySelections: (selectionId:string):boolean => {return false},
-    modifySelectionToBetSlip: (market:Market,selection:Selection) => {}
+    modifySelectionToBetSlip: (market:Market,selection:Selection) => {},
+    setEvents: (events:Event[]) => {},
+    fetchDataFromAPI:() => {}
 })

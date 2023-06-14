@@ -22,7 +22,7 @@ const EventList = () => {
 			{context => (
 				<React.Fragment>
 					{context.events.filter(e=>e.markets&&e.markets?.length>0).map(e=>(
-						<EventItem event={e}/> 
+						<EventItem event={e} key={e.id}/> 
 					))}
 				</React.Fragment>
 			)}
