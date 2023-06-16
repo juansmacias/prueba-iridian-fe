@@ -58,11 +58,11 @@ Para correr el codigo se puede mediante dos formas.
 
 1. Modo Desarrollo
 
-Para correr la aplicacion en modo desarrollo se tiene que instalar todas las dependencias(`npm install`) y luego con el comando `npm run start` se inicia el webapp
+Para correr la aplicacion en modo desarrollo se tiene que primero instalar todas las dependencias(`npm install`). En segunda instancia toca crear el archivo con las variables de entorno que vamos a usar. En este caso seran las misma que he colocado en el archivo de .env.example. En este orden de ideas se puede copiar ese archivo y pagarlo con el siguiente nombre .env.local. Para finalizar con el comando `npm run start` se inicia el webapp
 
 2. Modo Produccion
 
-Para el despliegue en produccion, hay que correr el comando `npm run build` y luego mediante explorador de archivos dirigirse a la carpeta de `build` y abrir archivo html.
+Para el despliegue en produccion, hay que iniciar creando el archivo de variables de entorno. En un archivo con nombre .env.local, se agrega la variable de entorno que lleva la URL del API de produccion. El nombre de la variable de ser `REACT_APP_API_URL`. Luego correr el comando `npm run build` y para finalizar mediante explorador de archivos dirigirse a la carpeta de `build` y abrir archivo html.
 
 ## Conclusiones
 
